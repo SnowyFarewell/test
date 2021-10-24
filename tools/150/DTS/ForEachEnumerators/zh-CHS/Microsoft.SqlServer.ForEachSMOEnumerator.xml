@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.ForEachSMOEnumerator</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.EmptyEnumerator.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.EmptyEnumerator" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.EmptyEnumerator.MoveNext">
+      <summary>将枚举器前移到集合的下一个元素。 如果没有要移到的对象，则返回 false。</summary>
+      <returns>false，因为没有项要移到空集合中。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.EmptyEnumerator.Reset">
+      <summary>将枚举器设置为其初始位置（在集合中第一个元素之前）。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator.GetEnumerator(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>返回可遍历 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator" /> 实例的枚举器。</summary>
+      <param name="connections">SMO 枚举器使用的连接的集合。</param>
+      <param name="variableDispenser">一个用来锁定变量的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 对象。</param>
+      <param name="events">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口的对象。</param>
+      <param name="log">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口的对象。</param>
+      <returns>后续强制转换为 IEnumerator 对象的对象。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若要加载保存为 .xml 的包，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="rootNode">包含要加载和持久化的对象或数据的节点。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若将包保存为 .xml，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="doc">要将该信息保存到的 XML 文档。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>返回一个值，该值指示容器是否具有将阻止它成功运行的无效设置。</summary>
+      <param name="connections">容器的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> 集合。</param>
+      <param name="variableDispenser">容器的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 集合。</param>
+      <param name="events">一个用来引发事件的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+      <param name="log">一个 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口。</param>
+      <returns>一个指示验证的结果的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> 枚举。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMODataFileEnumerator.MoveNext">
+      <summary>将枚举器前移到集合的下一个元素。</summary>
+      <returns>如果枚举器已成功前进到下一个元素，则为 true；如果枚举器已通过集合的末尾，则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMODataFileEnumerator.Reset">
+      <summary>将枚举器设置为其初始位置（在集合中第一个元素之前）。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMOEnumerator.MoveNext">
+      <summary>将枚举器前移到集合的下一个元素。</summary>
+      <returns>如果枚举器已成功前进到下一个元素，则为 true；如果枚举器已通过集合的末尾，则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMOEnumerator.Reset">
+      <summary>将枚举器设置为其初始位置（在集合中第一个元素之前）。</summary>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.EmptyEnumerator.Current">
+      <summary>将引发错误，指示一个空枚举器。</summary>
+      <returns>一个对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator.EnumURN">
+      <summary>获取或设置一个String，该字符串包含所选枚举的 SMO 枚举统一资源名称 (URN)。</summary>
+      <returns>一个String，该字符串枚举器的配置参数。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.IDTSForEachSMOEnumerator.EnumURN">
+      <summary>获取或设置一个String，该字符串包含所选枚举的 SQL Server 管理对象 (SMO) 枚举统一资源名称 (URN)。</summary>
+      <returns>一个String，该字符串枚举器的配置参数。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMODataFileEnumerator.Current">
+      <summary>从枚举器中获取当前对象。</summary>
+      <returns>作为集合中当前对象的对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMOEnumerator.Current">
+      <summary>从枚举器中获取当前对象。</summary>
+      <returns>作为集合中当前对象的对象。</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.EmptyEnumerator">
+      <summary>当对空集合调用枚举时充当占位符。 当集合中没有可枚举的元素时，运行时将返回空枚举器。 无法继承此类。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator">
+      <summary>包含枚举 SQL Server 管理对象 (SMO) 时使用的成员。 无法继承此类。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.IDTSForEachSMOEnumerator">
+      <summary>定义 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator" /> 类的接口，同时提供枚举 SQL Server 管理对象 (SMO) 的成员。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMODataFileEnumerator">
+      <summary>枚举 SQL Server 管理对象 (SMO) 数据文件。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMOEnumerator">
+      <summary>枚举 SQL Server 管理对象 (SMO) 对象。</summary>
+    </member>
+  </members>
+</doc>

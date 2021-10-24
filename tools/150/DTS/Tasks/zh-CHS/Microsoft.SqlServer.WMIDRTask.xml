@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.WMIDRTask</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+      <summary>将 <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> 引用传递到 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 任务。 此方法由运行时调用，在代码中未使用。</summary>
+      <param name="manager">要传递的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> 引用。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+      <summary>运行任务。</summary>
+      <param name="connections">任务的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> 集合。</param>
+      <param name="variableDispenser">任务的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> 集合。</param>
+      <param name="events">对实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> 以引发事件的对象的引用。</param>
+      <param name="log">对实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 的对象的引用。</param>
+      <param name="transaction">任务所属的事务对象，具体取决于在 TransactionOption 属性中找到的值。 此值可以设置为 Null 引用（在 Visual Basic 中为 Nothing）。</param>
+      <returns>一个指示执行结果的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+      <summary>初始化与 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 任务关联的属性。 此方法由运行时调用，在代码中未使用。</summary>
+      <param name="connections">任务的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> 集合。</param>
+      <param name="variableDispenser">一个用来锁定变量的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 对象。</param>
+      <param name="events">一个实现用来接收事件的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口的对象。</param>
+      <param name="log">一个实现用来记录事件的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口的对象。</param>
+      <param name="eventInfos">
+        <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" /> 对象。</param>
+      <param name="logEntryInfos">
+        <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogEntryInfos" /> 对象。</param>
+      <param name="refTracker">一个 <see cref="T:Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker" /> 对象。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若要加载保存为 .xml 的包，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="rootNode">包含要加载的信息的 XML 元素。</param>
+      <param name="events">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 的对象。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.ResumeExecution">
+      <summary>暂停后恢复执行任务。 由运行时引擎恢复任务或容器。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若将包保存为 .xml，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="doc">包含表示任务的 XML 元素 的 XmlDocument。</param>
+      <param name="events">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 的对象。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.SuspendExecution">
+      <summary>指示可执行文件需要挂起。 运行时引擎调用此方法。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>验证任务是否已正确配置。</summary>
+      <param name="connections">任务的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> 集合。</param>
+      <param name="variableDispenser">一个用来锁定变量的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 对象。</param>
+      <param name="events">一个实现用来接收事件的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口的对象。</param>
+      <param name="log">一个实现用来记录事件的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口的对象。</param>
+      <returns>一个指示验证结果的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> 值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.Destination">
+      <summary>获取或设置任务的目标的名称。</summary>
+      <returns>目标的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.DestinationType">
+      <summary>获取或设置目标的类型。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType" /> 值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.Output">
+      <summary>获取或设置一个对象，它包含任务的结果。</summary>
+      <returns>一个包含任务的结果的对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.OutputType">
+      <summary>获取或设置输出的类型。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType" /> 值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.OverwriteDestination">
+      <summary>获取或设置一个值，该值确定任务应如何处理目标中的现有数据。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination" /> 值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.WmiConnection">
+      <summary>获取或设置与任务关联的 WMI 连接的名称。</summary>
+      <returns>与任务关联的 WMI 连接的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.WqlQuerySource">
+      <summary>获取或设置要由任务执行的 WQL 查询的源。</summary>
+      <returns>WQL 查询的源。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.WqlQuerySourceType">
+      <summary>获取或设置查询源类型。</summary>
+      <returns>查询源类型。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.DebugMode">
+      <summary>一个 Boolean 值，该值指示 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 是否应检查断点启用与否。</summary>
+      <returns>如果 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 任务应该检查有无已启用的断点，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination">
+      <summary>获取或设置 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 的目标的名称。</summary>
+      <returns>一个String，该字符串包含目标的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.DestinationType">
+      <summary>获取或设置一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType" /> 值，该值指示 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 使用的目标的类型，例如文件或变量。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType" /> 值。 默认值为 <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType.FileConnection" />。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.ExecutionValue">
+      <summary>获取一个Object，该对象包含 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 任务的结果。</summary>
+      <returns>一个包含任务的结果的Object。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Output">
+      <summary>获取或设置一个 Object，它包含 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 任务的结果。</summary>
+      <returns>一个包含任务的结果的Object。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.OutputType">
+      <summary>获取或设置一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType" /> 值，该值指示 <see cref="T:System.Data.DataTable" /> 返回的输出的类型，例如 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 或字符串。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType" /> 值。 默认值为 <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType.DataTable" />。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.OverwriteDestination">
+      <summary>获取或设置一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination" /> 值，该值确定 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 应如何处理由 <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" /> 属性指定的目标中的现有数据。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination" /> 值。 默认值为 <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination.KeepOriginal" />。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.SuspendRequired">
+      <summary>获取或设置一个 Boolean 值，该值指示在遇到断点时任务是否应挂起。 遇到断点时，将由任务和容器的运行时引擎设置此值。</summary>
+      <returns>如果在遇到断点时任务挂起，则为 true。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WmiConnection">
+      <summary>获取或设置 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> 任务使用的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 的名称。</summary>
+      <returns>与任务关联的 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> 的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource">
+      <summary>获取或设置要由 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 执行的 Windows Management Instrumentation 查询语言 (WQL) 查询的源。</summary>
+      <returns>一个包含 WQL 查询的源的String。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySourceType">
+      <summary>获取或设置一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" /> 值，该值指示要由 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 执行的 Windows Management Instrumentation 查询语言 (WQL) 查询的源类型，例如文件连接或变量。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" /> 值。 默认值为 <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType.DirectInput" />。</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType">
+      <summary>确定在 <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" /> 类的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 属性中指定的目标的类型。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType.FileConnection">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" /> 属性包含接收 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 的结果的文件连接的名称。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType.Variable">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" /> 属性包含接收 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 的结果的String或Object变量的名称。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask">
+      <summary>表示一个 WMI 数据读取器任务。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType">
+      <summary>确定 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 类返回的输出的类型。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType.DataTable">
+      <summary>输出作为 <see cref="T:System.Data.DataTable" /> 返回。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType.PropertyValue">
+      <summary>输出作为包含指定属性的值的String返回。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType.PropertyNameAndValue">
+      <summary>输出作为包含指定属性的名称和值的String返回。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination">
+      <summary>确定 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 类如何将数据写入到在 <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" /> 中指定的目标。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination.OverwriteDestination">
+      <summary>该任务将覆盖指定的目标处的现有数据。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination.AppendToDestination">
+      <summary>该任务将其结果追加到指定的目标处的现有数据。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination.KeepOriginal">
+      <summary>如果数据在指定的目标中已存在，将会出错。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType">
+      <summary>确定 <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource" /> 的源类型，它提供要由 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> 类执行的 Windows Management Instrumentation 查询语言 (WQL) 查询。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType.FileConnection">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource" /> 包含要从其检索 WQL 查询的文件连接的名称。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType.DirectInput">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource" /> 包含 WQL 查询。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType.Variable">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource" /> 包含要从其检索 WQL 查询的变量的名称。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask">
+      <summary>包含用于配置和运行 WMI 数据读取器任务的成员，WMI 数据读取器任务运行 Windows Management Instrumentation (WMI) 查询并返回有关计算机系统的 WMI 数据。 无法继承此类。</summary>
+    </member>
+  </members>
+</doc>

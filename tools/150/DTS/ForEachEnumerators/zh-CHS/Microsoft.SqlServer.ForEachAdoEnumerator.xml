@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.ForEachADOEnumerator</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADORowsetEnumerator.MoveNext">
+      <summary>将枚举器前移到集合的下一个元素。 返回一个 Boolean ，该值指示 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADORowsetEnumerator.MoveNext" /> 是否已成功。</summary>
+      <returns>如果枚举器已成功前进到下一元素，则为 true；如果枚举器已通过集合的末尾，则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADORowsetEnumerator.Reset">
+      <summary>将枚举器设置为其初始位置（在集合中第一个元素之前）。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataColEnumerator.MoveNext">
+      <summary>指示枚举器是否移到下一个元素。</summary>
+      <returns>如果枚举器移到下一个元素，则为 True；否则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataColEnumerator.Reset">
+      <summary>将 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataColEnumerator" /> 重置为默认配置。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataRowEnumerator.MoveNext">
+      <summary>将枚举器前移到集合的下一个元素。 返回一个Boolean，该值指示 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataRowEnumerator.MoveNext" /> 是否已成功。</summary>
+      <returns>如果枚举器已成功前进到下一个元素，则为 true；如果枚举器已通过集合的末尾，则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataRowEnumerator.Reset">
+      <summary>将枚举器设置为其初始位置（在集合中第一个元素之前）。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator.MoveNext">
+      <summary>将枚举器前移到集合的下一个元素。<see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator" /> 对于此方法始终返回 false。</summary>
+      <returns>因为没有要移动到的对象，所以为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator.Reset">
+      <summary>将枚举器设置为其初始位置（在集合中第一个元素之前）。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.FieldColEnumerator.MoveNext">
+      <summary>指示枚举器是否移到下一个元素。</summary>
+      <returns>如果枚举器移到下一个元素，则为 True；否则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.FieldColEnumerator.Reset">
+      <summary>将 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataColEnumerator" /> 重置为默认配置。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator.GetEnumerator(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>返回可遍历 ActiveX 数据对象 (ADO) 对象的 IEnumerator 接口。</summary>
+      <param name="connections">任务使用的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> 的集合。</param>
+      <param name="variableDispenser">一个用来锁定变量的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 对象。</param>
+      <param name="events">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口的对象。</param>
+      <param name="log">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口的对象。</param>
+      <returns>一个对象。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若要加载保存为 .xml 的包，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="rootNode">包含要加载的信息的元素。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若将包保存为 .xml，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。 无法继承此方法。</summary>
+      <param name="doc">要将该信息保存到的 XML 文档。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.GetEnumerator(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>返回用于遍历集合的枚举器。</summary>
+      <param name="connections">枚举器的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> 集合。</param>
+      <param name="variableDispenser">容器的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 集合。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+      <param name="log">一个 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口。</param>
+      <returns>一个对象。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若要加载保存为 .xml 的包，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="rootNode">包含要加载的信息的元素。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若将包保存为 .xml，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="doc">要将信息保存到的 XmlDocument。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADORowsetEnumerator.Current">
+      <summary>从枚举器获取当前字段集合。</summary>
+      <returns>当前字段集合对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataColEnumerator.Current">
+      <summary>获取集合中的当前对象。</summary>
+      <returns>集合中的当前对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataRowEnumerator.Current">
+      <summary>获取集合中的当前元素。</summary>
+      <returns>集合中的当前元素。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator.Current">
+      <summary>将引发错误，指示一个空枚举器。</summary>
+      <returns>一个对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.FieldColEnumerator.Current">
+      <summary>获取集合中的当前对象。</summary>
+      <returns>集合中的当前对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator.DataObjectVariable">
+      <summary>获取或设置一个String，该字符串包含枚举器中的持久性数据对象。</summary>
+      <returns>一个String，该字符串包含枚举器中的持久性数据对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator.Type">
+      <summary>获取或设置一个值，该值指示要枚举哪种类型的对象。</summary>
+      <returns>一个指示要枚举的内容的来自 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType" /> 枚举的值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.Connection">
+      <summary>获取或设置一个String，该字符串包含架构行集枚举器的连接信息。</summary>
+      <returns>一个String，该字符串包含连接信息。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.ForEachEnumeratorDescription">
+      <summary>返回 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator" /> 的说明。</summary>
+      <returns>一个包含枚举器说明的String。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.ForEachEnumeratorDisplayName">
+      <summary>获取或设置一个String，该字符串包含枚举器的显示名称。</summary>
+      <returns>一个String，该字符串包含枚举器的显示名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.Restrictions">
+      <summary>获取或设置Strings数组，其中包含要应用于所返回行集的限制。</summary>
+      <returns>一个String数组。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.SchemaRowset">
+      <summary>获取或设置架构的 GUID</summary>
+      <returns>架构的 GUID。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachADOEnumerator.DataObjectVariable">
+      <summary>获取或设置一个String，该字符串包含枚举器中的持久性数据对象。</summary>
+      <returns>一个String，该字符串包含枚举器中的持久性数据对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachADOEnumerator.Type">
+      <summary>获取或设置一个值，该值指示要枚举哪种类型的对象。</summary>
+      <returns>一个指示要枚举的内容的来自 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType" /> 枚举的值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachSchemaRowsetEnumerator.Connection">
+      <summary>获取或设置一个String，该字符串包含架构行集枚举器的连接信息。</summary>
+      <returns>一个String，该字符串包含连接信息。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachSchemaRowsetEnumerator.Restrictions">
+      <summary>获取或设置Strings数组，其中包含要应用于所返回行集的限制。</summary>
+      <returns>一个String数组。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachSchemaRowsetEnumerator.SchemaRowset">
+      <summary>获取或设置架构的 GUID。</summary>
+      <returns>架构的 GUID。</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType">
+      <summary>介绍作为枚举的主题的对象。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType.EnumerateTables">
+      <summary>当变量包含数据集时，此设置枚举数据集中的所有表。 当变量包含数据表时，它将在运行时引发错误。 当它包含记录集时，它枚举记录集中的所有行。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType.EnumerateAllRows">
+      <summary>当变量包含数据集时，此设置枚举数据集的所有表中的所有行。 当变量包含数据表时，此设置枚举表中的所有行。 当它包含记录集时，它枚举记录集中的所有行。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType.EnumerateRowsInFirstTable">
+      <summary>当变量包含数据集时，此设置枚举数据集中第一个表中的所有行。 当变量包含数据表时，它枚举表中的所有行。 当它包含记录集时，它枚举记录集中的所有行。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADORowsetEnumerator">
+      <summary>支持遍历 ActiveX 数据对象 (ADO) 记录集。 无法继承此类。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataColEnumerator">
+      <summary>当 ADO 枚举器返回数据集或结果集时使用此类。 此枚举器使您能够枚举各列。 无法继承此类。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataRowEnumerator">
+      <summary>当 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType" /> 设置为返回 <see cref="F:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType.EnumerateAllRows" /> 且变量包含数据集时，支持迭代。 无法继承此类。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator">
+      <summary>当对空集合调用枚举时充当占位符。 无法继承此类。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.FieldColEnumerator">
+      <summary>当 ADO 枚举器返回数据集或结果集时使用此类。 此枚举器使您能够枚举各个字段。 无法继承此类。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator">
+      <summary>枚举数据集、数据表或记录集中的行。 无法继承此类。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator">
+      <summary>包含用于实现枚举架构行集的 Foreach 循环的方法和属性。 无法继承此类。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachADOEnumerator">
+      <summary>支持遍历数据集、数据表或记录集中的行。 此接口由 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator" /> 继承和使用。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachSchemaRowsetEnumerator">
+      <summary>包含 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator" /> 使用的属性。</summary>
+    </member>
+  </members>
+</doc>

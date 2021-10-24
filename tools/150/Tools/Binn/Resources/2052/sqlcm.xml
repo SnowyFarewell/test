@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<sqlcm xmlns="http://www.microsoft.com/sqlserver/management/sqlcm.xsd">
+  <_locDefinition>
+    <_locDefault _loc="locNone"/>
+    <_locTag _loc="locNone" _locAttrData="locDescr">item</_locTag>
+  </_locDefinition>
+
+  <descriptions>
+
+
+
+
+    <!-- SERVICES -->
+
+    <!-- SQLCM - Services - service type - service instance -->
+    <sheet location="property_description" name="Service">
+      <page name="General">
+        <item name="DisplayName" locDescr="服务的名称。"/>
+        <item name="HostName" locDescr="承载服务的主机。"/>
+        <item name="SQLServiceType" locDescr="服务类型。"/>
+        <item name="State" locDescr="此服务的当前状态。"/>
+        <item name="StartMode" locDescr="此服务的启动模式。"/>
+        <item name="LogOnUsingLocalAccount" locDescr="如果服务使用 LocalSystem 帐户登录，则为 True。"/>
+        <item name="StartName" locDescr="运行服务的帐户名。"/>
+        <item name="OldPassword" locDescr="运行服务的帐户使用的旧密码。"/>
+        <item name="PasswordForLogin" locDescr="运行服务的帐户的密码。"/>
+        <item name="VerifyPassword" locDescr="确认(再次键入)新密码。"/>
+        <item name="ErrorControl" locDescr="如果此服务无法启动，则此属性指定错误的严重级别。"/>
+        <item name="BinaryPath" locDescr="此服务的可执行文件的路径。"/>
+        <item name="ProcessID" locDescr="操作系统用来标识此服务进程的进程 ID。"/>
+        <item name="ExitCode" locDescr="定义在启动或停止该服务期间出现的问题的 Win32 错误代码。"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Services - service instance -->
+    <sheet location="property_description" name="Service" key="SQL Server">
+      <page name="Advanced">
+        <item name="VERSION" locDescr="SQL Server 实例的版本"/>
+        <item name="SPLEVEL" locDescr="在此 SQL Server 实例上应用的 Service Pack 级别。"/>
+        <item name="CLUSTERED" locDescr="指示 SQL Server 是否是群集的一部分。"/>
+        <item name="EXTERNAL_USERS_COUNT" locDescr="创建用于启动板的外部用户数量。最多允许 100 个用户。"/>
+        <item name="RESET_USERS_PASSWORD" locDescr="重置外部用户的密码。"/>
+        <item name="SECURITY_CONTEXTS_COUNT" locDescr="为启动板创建的安全性上下文数。"/>
+        <item name="INSTALLPATH" locDescr="SQL Server 的安装路径"/>
+        <item name="DATAPATH" locDescr="默认数据文件夹的路径"/>
+        <item name="LANGUAGE" locDescr="语言"/>
+        <item name="FILEVERSION" locDescr="SQL Server 可执行文件的版本号。"/>
+        <item name="VSNAME" locDescr="虚拟服务器名称(如果 Clustered = yes)。"/>
+        <item name="REGROOT" locDescr="所选 SQL Server 实例的注册表根目录"/>
+        <item name="SKU" locDescr="所安装版本的单品编号"/>
+        <item name="INSTANCEID" locDescr="SQL Server 实例的 ID"/>
+        <item name="STARTUPPARAMETERS" locDescr="SQL Server 在服务启动时使用的参数"/>
+        <item name="SQLSTATES" locDescr="SQL 状态"/>
+        <item name="ERRORREPORTING" locDescr="启用错误报告"/>
+        <item name="DUMPDIR" locDescr="用于转储错误信息的文件夹"/>
+        <item name="SQMREPORTING" locDescr="启用客户反馈报告。"/>
+        <item name="SKUNAME" locDescr="所安装版本的单品名称"/>
+        <item name="ISWOW64" locDescr="指示此 32 位服务是否正在 64 位操作系统上运行"/>
+        <item name="BROWSER" locDescr="指示 SQL Browser 服务是否在侦听。"/>
+        <item name="LOGDIR" locDescr="日志文件夹的路径"/>
+        <item name="INSTANT_FILE_INIT" locDescr="授予 SQL Server 数据库引擎服务帐户“执行卷维护任务”特权。"/>
+        <item name="LOCKPAGES" locDescr="授予 SQL Server 数据库引擎服务帐户“锁定内存页”特权。"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized names -->
+    <sheet location="property_name" name="Service" key="SQL Server">
+      <page name="Advanced">
+        <item name="VERSION" locDescr="版本"/>
+        <item name="SPLEVEL" locDescr="Service Pack 级别"/>
+        <item name="CLUSTERED" locDescr="群集"/>
+        <item name="SECURITY_CONTEXTS_COUNT" locDescr="安全性上下文计数"/>
+        <item name="EXTERNAL_USERS_COUNT" locDescr="外部用户计数"/>
+        <item name="RESET_USERS_PASSWORD" locDescr="重置外部用户密码"/>
+        <item name="INSTALLPATH" locDescr="安装路径"/>
+        <item name="DATAPATH" locDescr="数据路径"/>
+        <item name="LANGUAGE" locDescr="语言"/>
+        <item name="FILEVERSION" locDescr="文件版本"/>
+        <item name="VSNAME" locDescr="虚拟服务器名称"/>
+        <item name="REGROOT" locDescr="注册表根目录"/>
+        <item name="SKU" locDescr="单品 ID"/>
+        <item name="INSTANCEID" locDescr="实例 ID"/>
+        <item name="STARTUPPARAMETERS" locDescr="启动参数"/>
+        <item name="SQLSTATES" locDescr="SQL 状态"/>
+        <item name="ERRORREPORTING" locDescr="错误报告"/>
+        <item name="DUMPDIR" locDescr="转储目录"/>
+        <item name="SQMREPORTING" locDescr="客户反馈报告"/>
+        <item name="SKUNAME" locDescr="单品名称"/>
+        <item name="ISWOW64" locDescr="正在 64 位操作系统下运行"/>
+        <item name="BROWSER" locDescr="活动"/>
+        <item name="LOGDIR" locDescr="日志目录"/>
+        <item name="INSTANT_FILE_INIT" locDescr="即时文件初始化"/>
+        <item name="LOCKPAGES" locDescr="锁定内存页"/>
+      </page>
+    </sheet>
+
+
+
+
+    <!-- SERVER NETWORK CONFIGURATION -->
+
+    <!-- SQLCM - Server Network Configuration - Server Instance Protocols -->
+    <sheet location="property_description" name="Server Instance Network Configuration">
+      <page name="Flags">
+        <item name="ForceEncryption" locDescr="为所选服务器实例打开或关闭加密"/>
+		<item name="HideInstance" locDescr="防止 SQL Server Browser 服务将数据库引擎的此实例透露给客户端计算机"/>
+      </page>
+      <page name="Certificate">
+        <item name="Friendly Name" locDescr="证书的友好名称"/>
+        <item name="Issued By" locDescr="证书颁发方"/>
+        <item name="Issued To" locDescr="证书颁发对象"/>
+        <item name="Expiration Date" locDescr="证书过期日期"/>
+      </page>
+    </sheet>
+
+      <sheet location="property_name" name="Server Instance Network Configuration">
+          <page name="Flags">
+              <item name="ForceEncryption" locDescr="强行加密"/>
+              <item name="HideInstance" locDescr="隐藏实例"/>
+          </page>
+          <page name="Certificate">
+              <item name="Friendly Name" locDescr="友好名称"/>
+              <item name="Issued By" locDescr="颁发者:"/>
+              <item name="Issued To" locDescr="颁发对象"/>
+              <item name="Expiration Date" locDescr="到期日期"/>
+          </page>
+      </sheet>
+      
+    <!-- SQLCM - Server Network Configuration - Server Instance Protocols - "sm" protocol -->
+    <sheet location="property_description" name="Server Protocol" key="sm">
+      <page name="General">
+        <item name="Enabled" locDescr="启用或禁用此服务器实例的 Shared Memory 协议"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized names -->
+    <sheet location="property_name" name="Server Protocol" key="sm">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="Shared Memory"/>
+      </page>
+      <page name="General">
+        <item name="Enabled" locDescr="已启用"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Server Network Configuration - Server Instance Protocols - "np" protocol -->
+    <sheet location="property_description" name="Server Protocol" key="np">
+      <page name="General">
+        <item name="PipeName" locDescr="管道名称"/>
+        <item name="Enabled" locDescr="启用或禁用此服务器实例的 Named Pipes 协议"/>
+        <item name="LocalAccessOnly" locDescr="对于此 Named Pipe，只执行本地访问"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized names -->
+    <sheet location="property_name" name="Server Protocol" key="np">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="Named Pipes"/>
+      </page>
+      <page name="General">
+        <item name="PipeName" locDescr="管道名称"/>
+        <item name="Enabled" locDescr="已启用"/>
+        <item name="LocalAccessOnly" locDescr="仅本地访问"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Server Network Configuration - Server Instance Protocols - "tcp" protocol -->
+    <sheet location="property_description" name="Server Protocol" key="tcp">
+      <page name="General">
+        <item name="KeepAlive" locDescr="TCP 检查空闲连接是否仍保持原样的频率"/>
+        <item name="Enabled" locDescr="启用或禁用此服务器实例的 TCP/IP 协议"/>
+        <item name="ListenOnAllIPs" locDescr="侦听所有 IP"/>
+        <item name="NoDelay" locDescr="无延迟"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized names -->
+    <sheet location="property_name" name="Server Protocol" key="tcp">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="TCP/IP"/>
+      </page>
+      <page name="General">
+        <item name="KeepAlive" locDescr="保持活动状态"/>
+        <item name="Enabled" locDescr="已启用"/>
+        <item name="ListenOnAllIPs" locDescr="全部侦听"/>
+        <item name="NoDelay" locDescr="无延迟"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Server Network Configuration - Server Instance Protocols - "via" protocol -->
+    <sheet location="property_description" name="Server Protocol" key="via">
+      <page name="General">
+        <item name="DefaultServerPort" locDescr="默认服务器端口"/>
+        <item name="ListenInfo" locDescr="侦听信息"/>
+        <item name="VendorName" locDescr="供应商名称"/>
+        <item name="Enabled" locDescr="启用或禁用此服务器实例的虚拟接口体系结构协议"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized names -->
+    <sheet location="property_name" name="Server Protocol" key="via">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="VIA"/>
+      </page>
+      <page name="General">
+        <item name="DefaultServerPort" locDescr="默认端口"/>
+        <item name="ListenInfo" locDescr="侦听信息"/>
+        <item name="VendorName" locDescr="供应商"/>
+        <item name="Enabled" locDescr="已启用"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Server Network Configuration - Server Instance Protocols - "tcp" protocol - IP-s -->
+    <sheet location="property_description" name="IP Address" key="tcp">
+      <page name="General">
+        <item name="TcpPort" locDescr="TCP 端口"/>
+        <item name="TcpDynamicPorts" locDescr="如果未启用动态端口，则留空。若要使用动态端口，请设置为 0。"/>
+        <item name="IpAddress" locDescr="IP 地址"/>
+        <item name="Active" locDescr="指示所选 IP 地址是否处于活动状态。"/>
+        <item name="Enabled" locDescr="启用或禁用该 IP 地址"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized name -->
+    <sheet location="property_name" name="IP Address" key="tcp">
+      <page name="General">
+        <item name="TcpPort" locDescr="TCP 端口"/>
+        <item name="TcpDynamicPorts" locDescr="TCP 动态端口"/>
+        <item name="IpAddress" locDescr="IP 地址"/>
+        <item name="Active" locDescr="活动"/>
+        <item name="Enabled" locDescr="已启用"/>
+      </page>
+    </sheet>
+
+
+
+
+    <!-- CLIENT NETWORK CONFIGURATION -->
+
+    <!-- SQLCM - Client Network Configuration -->
+    <sheet location="property_description" name="Client Network Configuration">
+      <page name="Library">
+        <item name="ANSItoOEM" locDescr="ANSI to OEM 属性可用于指定是否允许从 ANSI 到 OEM 的转换"/>
+        <item name="Date" locDescr="客户端计算机上可以使用的 DBLib 的创建日期"/>
+        <item name="FileName" locDescr="DBLib 文件的名称"/>
+        <item name="UseInternationalSettings" locDescr="打开/关闭国际设置"/>
+        <item name="Size" locDescr="DBLib 库大小"/>
+      </page>
+    </sheet>
+
+    <sheet location="property_description" name="Client Network Configuration">
+      <page name="Flags">
+        <item name="Force protocol encryption" locDescr="请求安全套接层连接"/>
+		<item name="Trust Server Certificate" locDescr="跳过服务器证书验证"/>
+      </page>
+    </sheet>
+	<sheet location="property_name" name="Client Network Configuration">
+		<page name="Flags">
+			<item name="Force protocol encryption" locDescr="强制协议加密"/>
+			<item name="Trust Server Certificate" locDescr="信任服务器证书"/>
+		</page>
+	</sheet>
+
+    <!-- SQLCM - Client Network Configuration - Client Protocols -->
+    <!--
+		<sheet location="property_description" name="Client Protocols">
+			<page name="Order">
+				<item name="sm" locDescr="Protocol used by client to communicate with local server via Shared Memory. Shared Memory is used only for client/server connections on the same computer. If enabled this protocol is always first." />
+				<item name="tcp" locDescr="Protocol used by client to comunicate with a server via TCP/IP. TCP/IP Sockets is a non-authenticated protocol. This means that connections are not authenticated, and connections and access levels are determined only by the user name and password provided during the connection. TCP/IP Sockets requires more administration than Named Pipes, since each user access permission must be defined at the SQL Server. TCP/IP Sockets is a good choice for network protocol if your application does not require SQL Server's integrated security. Microsoft recommands using integrated security whenever possible." />
+				<item name="np" locDescr="Protocol used by client to communicate with a server via Named Pipes. Named Pipes is an authenticated protocol. This means that any time a user attempts to open a connection to the SQL Server via Named Pipes, the Windows NT authentication process occurs. Named Pipes is required to support SQL Server's integrated security option. It's also worth noting that Named Pipes connects very fast much faster than the other protocols. Named Pipes is an excellent choice for network protocol if your application intends to use SQL Server's integrated security and does not need other protocols for remote connections." />
+				<item name="via" locDescr="Protocol used by client to communicate with a server via Virtual Interface Architecture." />
+			</page>
+		</sheet>
+		-->
+    <sheet location="property_description" name="Client Protocols">
+      <page name="Order">
+        <item name="sm" locDescr="客户端通过 Shared Memory 与本地服务器通信时使用的协议。只要启用了此协议，就始终首先采用它。"/>
+        <item name="tcp" locDescr="客户端通过 TCP/IP 与服务器通信时使用的协议。TCP/IP 套接字为不要求身份验证的协议。"/>
+        <item name="np" locDescr="客户端通过 Named Pipes 与服务器通信时使用的协议。Named Pipes 为要求身份验证的协议。"/>
+        <item name="via" locDescr="客户端通过虚拟接口体系结构与服务器通信时使用的协议。"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Client Network Configuration - Client Protocols - "tcp" protocol -->
+    <sheet location="property_description" name="Client Protocol" key="tcp">
+      <page name="General">
+        <item name="Default Port" locDescr="建立连接时将使用的默认端口"/>
+        <item name="KEEPALIVE (in milliseconds)" locDescr="TCP 检查空闲连接是否仍保持原样的频率"/>
+        <item name="KEEPALIVEINTERVAL (in milliseconds)" locDescr="不响应的 TCP KEEPALIVE 传输的重试间隔"/>
+        <item name="Enabled" locDescr="为此客户端启用或禁用 TCP/IP 协议"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized name -->
+    <sheet location="property_name" name="Client Protocol" key="tcp">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="TCP/IP"/>
+      </page>
+      <page name="General">
+        <item name="Default Port" locDescr="默认端口"/>
+        <item name="KEEPALIVE (in milliseconds)" locDescr="保持活动状态"/>
+        <item name="KEEPALIVEINTERVAL (in milliseconds)" locDescr="保持活动状态的间隔"/>
+        <item name="Enabled" locDescr="已启用"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Client Network Configuration - Client Protocols - "np" protocol -->
+    <sheet location="property_description" name="Client Protocol" key="np">
+      <page name="General">
+        <item name="Default Pipe" locDescr="用于通信的默认管道"/>
+        <item name="Enabled" locDescr="为此客户端启用或禁用 Named Pipe 协议"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized name -->
+    <sheet location="property_name" name="Client Protocol" key="np">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="Named Pipes"/>
+      </page>
+      <page name="General">
+        <item name="Default Pipe" locDescr="默认管道"/>
+        <item name="Enabled" locDescr="已启用"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Client Network Configuration - Client Protocols - "via" protocol -->
+    <sheet location="property_description" name="Client Protocol" key="via">
+      <page name="General">
+        <item name="Default Server Port" locDescr="默认服务器名称"/>
+        <item name="Vendor Name" locDescr="为 VIA 协议提供支持的供应商的名称"/>
+        <item name="Vendor DLL" locDescr="包含 VIA 协议实现的库的名称"/>
+        <item name="Default Client NIC" locDescr="默认客户端网络接口卡"/>
+        <item name="Enabled" locDescr="为此客户端启用或禁用虚拟接口体系结构协议"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized name -->
+    <sheet location="property_name" name="Client Protocol" key="via">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="VIA"/>
+      </page>
+      <page name="General">
+        <item name="Default Server Port" locDescr="默认服务器"/>
+        <item name="Vendor Name" locDescr="供应商"/>
+        <item name="Vendor DLL" locDescr="供应商库"/>
+        <item name="Default Client NIC" locDescr="默认 NIC"/>
+        <item name="Enabled" locDescr="已启用"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Client Network Configuration - Client Protocols - "sm" protocol -->
+    <sheet location="property_description" name="Client Protocol" key="sm">
+      <page name="General">
+        <item name="Enabled" locDescr="为此客户端启用或禁用 Shared Memory 协议"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized name -->
+    <sheet location="property_name" name="Client Protocol" key="sm">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="Shared Memory"/>
+      </page>
+      <page name="General">
+        <item name="Enabled" locDescr="已启用"/>
+      </page>
+    </sheet>
+
+
+    <!-- SQLCM - Client Network Configuration - Aliases - new alias -->
+    <sheet location="property_description" name="New Alias">
+      <page name="New Alias">
+        <item name="AliasName" locDescr="将创建的新别名的名称"/>
+        <item name="ServerName" locDescr="别名指向的服务器的名称"/>
+        <item name="ProtocolName" locDescr="用于此别名的协议的名称"/>
+        <item name="ConnectionString" locDescr="与新别名相关联的连接字符串"/>
+        <item name="Encrypted" locDescr="告知通过此新别名建立的连接是否使用加密"/>
+        <item name="Shared Memory" locDescr="Shared Memory 协议不需要任何连接参数"/>
+        <item name="Named Pipes" locDescr="管道名称应与 SQL Server 实例使用的管道名称匹配"/>
+        <item name="TCP/IP" locDescr="新别名使用的连接到 SQL Server 的端口号"/>
+        <item name="VIA" locDescr="新别名使用的连接到 SQL Server 的 VIA 设置"/>
+        <item name="Unknown" locDescr="新别名使用的针对指定协议的连接信息"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Client Network Configuration - Aliases - alias properties -->
+    <sheet location="property_description" name="Alias">
+      <page name="Alias">
+        <item name="AliasName" locDescr="现有别名的名称"/>
+        <item name="ServerName" locDescr="别名指向的服务器的名称"/>
+        <item name="ProtocolName" locDescr="该别名使用的协议的名称"/>
+        <item name="ConnectionString" locDescr="与别名相关联的连接字符串"/>
+        <item name="Encrypted" locDescr="告知通过此别名建立的连接是否使用加密"/>
+        <item name="Shared Memory" locDescr="Shared Memory 协议不需要任何连接参数"/>
+        <item name="Named Pipes" locDescr="该别名使用的连接到 SQL Server 的管道名称"/>
+        <item name="TCP/IP" locDescr="该别名使用的连接到 SQL Server 的端口号"/>
+        <item name="VIA" locDescr="该别名使用的连接到 SQL Server 的 VIA 设置"/>
+        <item name="Unknown" locDescr="该别名使用的针对指定协议的连接信息"/>
+      </page>
+    </sheet>
+
+
+
+
+    <!-- REPORT SERVER CONFIGURATION -->
+
+    <!-- SQLCM - Report Server Configuration - report manager instance -->
+    <sheet location="property_description" name="Report Manager Instance">
+      <page name="Report Manager">
+        <item name="InstanceName" locDescr="实例的名称"/>
+        <item name="VirtualRoot" locDescr="用于报表的虚拟根目录"/>
+        <item name="PathName" locDescr="应用程序文件的本地路径"/>
+        <item name="URLToReportServer" locDescr="指向报表服务器的 URL"/>
+        <item name="URLToReportServerWebService" locDescr="指向报表服务器 Web 服务的 URL"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Report Server Configuration - report manager instance -->
+    <!-- SQLCM - Services - Report Server - service instance -->
+    <sheet location="property_description" name="Report Manager Instance">
+      <page name="Report Service">
+        <item name="InstanceName" locDescr="实例名称"/>
+        <item name="PathName" locDescr="可执行文件的路径"/>
+        <item name="VirtualRoot" locDescr="说明虚拟根目录的完整 URL"/>
+        <item name="InstanceID" locDescr="特定报表服务的唯一标识符"/>
+        <item name="DatabaseServerName" locDescr="运行报表服务器数据库的计算机名称"/>
+        <item name="DatabaseName" locDescr="报表服务器数据库的实例名"/>
+        <item name="Impersonate" locDescr="连接到报表服务器数据库时模拟 Windows 用户"/>
+        <item name="ImpersonateDomain" locDescr="连接到报表服务器数据库时用来模拟的用户的域"/>
+        <item name="ImpersonateUserName" locDescr="连接到报表服务器数据库时用来模拟的用户"/>
+        <item name="ImpersonatePassword" locDescr="连接到报表服务器数据库时用来模拟的用户的密码"/>
+        <item name="DatabaseIntegratedSecurity" locDescr="数据库集成安全性"/>
+        <item name="DatabaseLogonName" locDescr="当服务登录到报表服务器数据库时使用的用户名"/>
+        <item name="DatabaseLogonPassword" locDescr="数据库登录帐户的密码"/>
+        <item name="DatabaseLoginTimeout" locDescr="报表服务器数据库登录尝试失败后等待多少秒才返回。如果该值为 0，则表示可以无限制等待。"/>
+        <item name="DatabaseQueryTimeout" locDescr="报表服务器认为命令执行失败或所需的执行时间太长(超时)之前必须等待的秒数。"/>
+        <item name="UnattendedExecutionLogonDomain" locDescr="报表服务器以无人参与方式运行报表时用来模拟的用户的域。"/>
+        <item name="UnattendedExecutionLogonName" locDescr="报表服务器以无人参与方式运行报表时用来模拟的用户名。"/>
+        <item name="UnattendedExecutionLogonPassword" locDescr="与以下登录名一起使用的密码: 报表服务器以无人参与方式运行报表时用来模拟的登录名。"/>
+      </page>
+    </sheet>
+
+
+
+  </descriptions>
+</sqlcm>
