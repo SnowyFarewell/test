@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.ManagedConnections</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.#ctor(System.String)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn" /> 类的新实例，并将路径初始化为消息队列。</summary>
+      <param name="strPath">消息队列的路径。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.AcquireConnection(System.Object)">
+      <summary>建立 MSMQ 连接，并返回一个连接对象。</summary>
+      <param name="txn">事务类型的句柄。</param>
+      <returns>包含 MSMQ 连接的连接对象。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若要将保存为 .xml 的包加载到硬盘，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="rootNode">包含要加载的信息的节点。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若将包保存为 .xml，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="doc">要将该信息保存到的 XML 文档。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.#ctor(System.Boolean,System.String,System.String)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn" /> 类的新实例，同时初始化身份验证模式、用户名和密码。</summary>
+      <param name="bUseWindowsAuthentication">一个 Boolean 值，该值指定连接管理器是否使用 Windows 身份验证。 如果使用 Windows 身份验证，则为 true。</param>
+      <param name="UserName">连接管理器使用的用户名。</param>
+      <param name="Password">连接管理器使用的密码。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.#ctor(System.Boolean,System.String,System.String,System.String)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn" /> 类的新实例，同时初始化身份验证模式、用户名、密码和服务器。</summary>
+      <param name="bUseWindowsAuthentication">一个 Boolean 值，该值指定连接管理器是否使用 Windows 身份验证。 如果使用 Windows 身份验证，则为 true。</param>
+      <param name="UserName">连接管理器使用的用户名。</param>
+      <param name="Password">连接管理器使用的密码。</param>
+      <param name="SqlServerName">要与其建立 SMO 连接的服务器的名称。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.AcquireConnection(System.Object)">
+      <summary>建立 SMO 连接，并返回一个连接对象。</summary>
+      <param name="txn">事务类型的句柄。</param>
+      <returns>包含 SMO 连接的连接对象。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若要加载保存为 .xml 的包，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="rootNode">包含要加载的信息的节点。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若将包保存为 .xml，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="doc">要将该信息保存到的 XML 文档。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.#ctor(System.String)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn" /> 类的新实例，同时初始化 SMPT 服务器名称。</summary>
+      <param name="strSmtpServer">一个String，该字符串包含 SMTP 服务器名称。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.#ctor(System.String,System.Boolean,System.Boolean)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn" /> 类的新实例，同时初始化 SMPT 服务器名称、Windows 身份验证以及用于安全套接字层的设置。</summary>
+      <param name="strSmtpServer">一个String，该字符串包含 SMTP 服务器名称。</param>
+      <param name="useWindowsAuthentication">一个Boolean，该值指定使用 Windows 身份验证来验证对于服务器的访问。</param>
+      <param name="EnableSsl">一个Boolean，该值指示在发送电子邮件时是否使用安全套接字层 (SSL) 对通信进行加密。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.AcquireConnection(System.Object)">
+      <summary>建立 SMTP 连接，并返回一个连接对象。</summary>
+      <param name="txn">事务类型的句柄。</param>
+      <returns>包含 SMTP 连接的连接对象。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若要加载保存为 .xml 的包，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="rootNode">包含要加载的信息的节点。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若将包保存为 .xml，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="doc">要将该信息保存到的 XML 文档。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.#ctor(System.Boolean,System.String,System.String)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> 类的新实例，同时初始化身份验证模式、用户名和密码。</summary>
+      <param name="bUseNtAuth">一个 Boolean 值，该值指定连接管理器是否使用 Windows 身份验证。 如果使用 Windows 身份验证，则为 true。</param>
+      <param name="UserName">连接管理器使用的用户名。</param>
+      <param name="Password">连接管理器使用的密码。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.#ctor(System.Boolean,System.String,System.String,System.String,System.String)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> 类的新实例，同时初始化身份验证模式、用户名、密码、服务器和命名空间。</summary>
+      <param name="bUseNtAuth">一个 Boolean 值，该值指定连接管理器是否使用 Windows 身份验证。 如果使用 Windows 身份验证，则为 true。</param>
+      <param name="UserName">连接管理器使用的用户名。</param>
+      <param name="Password">连接管理器使用的密码。</param>
+      <param name="ServerName">要作为 WMI 连接连接到的服务器的名称。</param>
+      <param name="Namespace">连接管理器使用的命名空间。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.#ctor(System.String,System.String)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> 类的新实例，同时初始化 WMI 服务器名称和命名空间。</summary>
+      <param name="ServerName">要作为 WMI 连接连接到的服务器的名称。</param>
+      <param name="Namespace">连接管理器使用的命名空间。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.AcquireConnection(System.Object)">
+      <summary>建立 WMI 连接，并返回一个连接对象。</summary>
+      <param name="txn">事务类型的句柄。</param>
+      <returns>包含 WMI 连接的连接对象。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若要加载保存为 .xml 的包，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="rootNode">包含要加载的信息的 XMLElement。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若将包保存为 .xml，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="doc">要将该信息保存到的 XML 文档。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.ConnectionDescription">
+      <summary>返回连接的本地化说明。</summary>
+      <returns>一个String，该字符串包含连接的本地化说明。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.ConnectionDisplayName">
+      <summary>返回连接的本地化显示名称。</summary>
+      <returns>一个String，该字符串包含连接的本地化显示名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.ConnectionString">
+      <summary>获取或设置 MSMQ 连接的连接字符串。</summary>
+      <returns>一个String，该字符串包含 MSMQ 连接的连接字符串。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.Path">
+      <summary>获取或设置指向文件的路径。</summary>
+      <returns>一个String，该字符串包含文件的路径。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.ConnectionDescription">
+      <summary>获取用于 SMO 连接的连接管理器的说明。</summary>
+      <returns>一个String，该字符串说明用于 SMO 连接的连接管理器。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.ConnectionDisplayName">
+      <summary>返回连接的本地化显示名称。</summary>
+      <returns>一个String，该字符串包含连接的本地化显示名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.ConnectionString">
+      <summary>获取或设置 SMO 连接的连接字符串。</summary>
+      <returns>一个String，该字符串包含 SMO 连接的连接字符串。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.Password">
+      <summary>如果不使用 Windows 身份验证，则设置连接所用的密码。</summary>
+      <returns>一个指定连接的密码的String。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.SqlServerName">
+      <summary>获取或设置一个String，其中包含您要与其建立 SMO 连接的 SQL Server 的名称。</summary>
+      <returns>一个String，该字符串包含要作为 SMO 连接连接到的 SQL 服务器的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.UserName">
+      <summary>如果不使用 Windows 身份验证，则获取或设置连接的用户名。</summary>
+      <returns>一个String，该字符串包含连接的用户名。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.UseWindowsAuthentication">
+      <summary>获取或设置一个Boolean，该值指示是否对连接使用 Windows 身份验证。</summary>
+      <returns>如果对连接使用 Windows 身份验证，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.ConnectionDescription">
+      <summary>返回连接的本地化说明。</summary>
+      <returns>一个String，该字符串包含连接的本地化说明。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.ConnectionDisplayName">
+      <summary>返回连接的本地化显示名称。</summary>
+      <returns>一个String，该字符串包含连接的本地化显示名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.ConnectionString">
+      <summary>获取或设置 SMTP 连接的连接字符串。</summary>
+      <returns>一个String，该字符串包含 SMTP 连接的连接字符串。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.EnableSsl">
+      <summary>获取或设置一个Boolean，该值指示在发送电子邮件时是否使用安全套接字层 (SSL) 对通信进行加密。</summary>
+      <returns>true 指示在发送电子邮件时，将使用安全套接字层 (SSL) 对通信加密。false 指示不使用加密。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.SmtpServer">
+      <summary>获取或设置用于连接到 SMTP 服务器的名称。</summary>
+      <returns>一个String，该字符串包含用于连接到 SMTP 服务器的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.Timeout">
+      <summary>获取或设置连接生成的超时请求。</summary>
+      <returns>连接生成的超时请求。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.UseWindowsAuthentication">
+      <summary>获取或设置一个Boolean，该值指示是否使用 Windows 身份验证访问 SMTP 服务器。</summary>
+      <returns>true 指示使用 Windows 身份验证来验证对于服务器的访问。false 指示不使用 Windows 身份验证。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.ConnectionDescription">
+      <summary>获取用于 WMI 连接的连接管理器的说明。</summary>
+      <returns>一个 String，它说明用于 WMI 连接的连接管理器。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.ConnectionDisplayName">
+      <summary>返回连接的本地化显示名称。</summary>
+      <returns>一个String，该字符串包含连接的本地化显示名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.ConnectionString">
+      <summary>获取或设置 WMI 连接的连接字符串。</summary>
+      <returns>一个String，该字符串包含 WMI 连接的连接字符串。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.Namespace">
+      <summary>获取或设置 WMI 命名空间。</summary>
+      <returns>一个String，该字符串包含 WMI 命名空间。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.Password">
+      <summary>如果不使用 Windows 身份验证，则设置连接所用的密码。</summary>
+      <returns>一个包含连接密码的String。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.ServerName">
+      <summary>获取或设置要作为 WMI 连接连接到的服务器的名称。</summary>
+      <returns>一个String，该字符串包含要作为 WMI 连接连接到的服务器的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.UserName">
+      <summary>如果不使用 Windows 身份验证，则获取或设置连接的用户名。</summary>
+      <returns>一个String，该字符串包含连接的用户名。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.UseWindowsAuth">
+      <summary>获取或设置一个Boolean，该值指示是否对连接使用 Windows 身份验证。</summary>
+      <returns>如果对连接使用 Windows 身份验证，则为 true；否则为 false。</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn">
+      <summary>包含 MSMQ 连接所使用的方法和属性。 已使用 DtsConnection 属性 <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsConnectionAttribute" /> 定义它。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn">
+      <summary>包含 SMO 连接所使用的方法和属性。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn">
+      <summary>包含 SMTP 连接所使用的方法和属性。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn">
+      <summary>包含 WMI 连接所使用的方法和属性。</summary>
+    </member>
+  </members>
+</doc>

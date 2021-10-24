@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.TransferStoredProceduresTask</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+      <summary>将 <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> 传递给某一任务。 此方法由运行时调用，在代码中未使用。</summary>
+      <param name="manager">特定于此任务的断点管理器。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+      <summary>运行任务。</summary>
+      <param name="connections">任务使用的连接的集合。</param>
+      <param name="variableDispenser">一个用来锁定变量的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 对象。</param>
+      <param name="events">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> 接口的对象。</param>
+      <param name="log">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口的对象。</param>
+      <param name="transaction">容器所属的事务对象。 此值可以为 null。</param>
+      <returns>一个来自 <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> 枚举的值。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+      <summary>初始化与该任务相关联的属性。 此方法由运行时调用，在代码中未使用。</summary>
+      <param name="connections">任务使用的连接的集合。</param>
+      <param name="variableDispenser">一个用来锁定变量的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 对象。</param>
+      <param name="events">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口的对象。</param>
+      <param name="log">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口的对象。</param>
+      <param name="eventInfos">一个包含要在任务执行期间引发的事件的集合。</param>
+      <param name="logEntryInfos">日志项的集合。</param>
+      <param name="refTracker">一个对象引用跟踪器。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若要加载保存为 .xml 的包，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="rootNode">包含要加载的信息的节点。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.ResumeExecution">
+      <summary>暂停后恢复执行任务。 由运行时引擎恢复任务或容器。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若将包保存为 .xml，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="doc">要将该信息保存到的 XML 文档。</param>
+      <param name="events">一个对象，该对象实现在持久性期间中用于引发事件（错误、警告等）的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.SuspendExecution">
+      <summary>指示可执行文件需要挂起。 运行时引擎调用此方法。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>验证组件是否已正确配置。</summary>
+      <param name="connections">任务使用的连接的集合。</param>
+      <param name="variableDispenser">一个用来锁定变量的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 对象。</param>
+      <param name="events">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> 接口的对象。</param>
+      <param name="log">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口的对象。</param>
+      <returns>一个来自 <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> 枚举的值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.ITransferStoredProceduresTask.DestinationConnection">
+      <summary>获取或设置目标数据库的连接名称。</summary>
+      <returns>目标数据库的连接名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.ITransferStoredProceduresTask.IfObjectExists">
+      <summary>从 <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists" /> 枚举获取或设置一个值，该值指示如果在目标位置存在具有相同名称的存储过程，该任务应该失败、覆盖现有存储过程还是跳过该存储过程的传输。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists" /> 值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.ITransferStoredProceduresTask.SourceConnection">
+      <summary>获取或设置源数据库的连接管理器的名称。</summary>
+      <returns>源数据库的连接管理器的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.ITransferStoredProceduresTask.StoredProceduresList">
+      <summary>获取或设置以逗号分隔的存储过程名称的列表。</summary>
+      <returns>以逗号分隔的存储过程名称的列表。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.ITransferStoredProceduresTask.TransferAllStoredProcedures">
+      <summary>获取或设置一个值，该值指示是否传输 master 数据库中的所有存储过程。</summary>
+      <returns>如果传输 master 数据库中的所有存储过程，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.DebugMode">
+      <summary>获取或设置一个Boolean，它指定某一任务是否应确定断点启用与否。</summary>
+      <returns>如果此任务确定是否启用断点，则为 true；如果此任务可以忽略所有断点，则为 false。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.DestinationConnection">
+      <summary>获取或设置一个String，它包含用于源/目标数据库的 SMO 连接管理器的名称。</summary>
+      <returns>一个包含 SMO 连接管理器的String。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.ExecutionValue">
+      <summary>返回一个对象，它包含已传输的存储过程的数目的计数。</summary>
+      <returns>一个包含已传输的存储过程数目的对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.IfObjectExists">
+      <summary>从 <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists" /> 枚举获取或设置一个值，该值指示如果在目标位置存在具有相同名称的存储过程，该任务应该失败、覆盖现有存储过程还是跳过该存储过程的传输。</summary>
+      <returns>一个来自 <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists" /> 枚举的值，该值指示如果在目标位置存在具有相同名称的存储过程，该任务应该失败、忽略现有存储过程还是跳过该存储过程的传输。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.SourceConnection">
+      <summary>获取或设置一个String，它包含用于源/目标数据库的 SMO 连接管理器的名称。</summary>
+      <returns>一个String，该值包含 SMO 连接管理器的连接字符串。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.StoredProceduresList">
+      <summary>获取或设置 StringCollection，它包含以逗号分隔的存储过程名称的列表。</summary>
+      <returns>一个 StringCollection，它包含以逗号分隔的存储过程名称的列表。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.SuspendRequired">
+      <summary>获取或设置一个Boolean，该值指示在某一任务遇到断点时该任务是否应挂起。 遇到断点时，将由任务或容器的运行时引擎设置此值。</summary>
+      <returns>如果任务挂起，则为 true；如果任务可以忽略断点，则为 false。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.TransferAllStoredProcedures">
+      <summary>一个Boolean，该值指示是传输源 SQL Server 的 master 数据库中的所有存储过程，还是只传输指定的存储过程。</summary>
+      <returns>如果传输 master 数据库中的所有存储过程，则为 true。 如果只传输 <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.StoredProceduresList" /> 中那些具有指定名称的存储过程，则为 false。</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists">
+      <summary>包含由 <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.IfObjectExists" /> 的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask" /> 属性使用的某些值，用于确定在目标上存在该存储过程时如何处理传输。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists.FailTask">
+      <summary>如果在目标位置存在相同的存储过程，将导致任务失败。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists.Overwrite">
+      <summary>如果在目标上存在相同的存储过程，则覆盖作业。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists.Skip">
+      <summary>如果在目标位置存在相同的存储过程，则跳过存储过程的传输。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.ITransferStoredProceduresTask">
+      <summary>表示传输存储过程任务。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask">
+      <summary>包含方法、属性和枚举，它们可用于将存储过程从位于一个 SQL Server 实例上的 master 数据库复制到另一个实例。 无法继承此类。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.DtsTransferSPException">
+      <summary>在任务的 XML 根节点的持久化名称损坏的情况下在加载时引发的异常。</summary>
+    </member>
+  </members>
+</doc>

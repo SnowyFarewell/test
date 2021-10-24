@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.WebServiceTask</name>
+  </assembly>
+  <members>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.DEFAULT_CODE">
+      <summary>指定错误代码的默认值。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.NOTSUPPORTED_CODE">
+      <summary>指定该任务遇到不支持的情况时使用的错误代码。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.#ctor(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" /> 类的新实例，并且初始化数组元素的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" />。</summary>
+      <param name="paramType">一个来自 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> 枚举的值。 表示数组中参数的参数类型。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.Clone">
+      <summary>创建与当前 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" /> 完全相同的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" /> 类的实例。</summary>
+      <returns>一个对象，其属性与此 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" /> 的属性完全相同。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.Equals(System.Object)">
+      <summary>确定两个对象实例是否相等。</summary>
+      <param name="obj">要与当前对象比较的对象。</param>
+      <returns>如果指定的对象等于当前对象，则为 true；否则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.GetHashCode">
+      <summary>返回 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" /> 类的实例的哈希代码。</summary>
+      <returns>32 位有符号整数哈希代码。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.#ctor(System.String,System.String,Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" /> 类的新实例，并且初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" /> 的名称、数据类型和参数类型。</summary>
+      <param name="name">属性的名称。</param>
+      <param name="datatype">属性的数据类型。</param>
+      <param name="type">属性的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" />。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.Clone">
+      <summary>创建与当前 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" /> 完全相同的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" /> 类的实例。</summary>
+      <returns>一个对象，其属性与此 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" /> 的属性完全相同。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.Equals(System.Object)">
+      <summary>确定两个对象实例是否相等。</summary>
+      <param name="obj">要与当前对象比较的对象。</param>
+      <returns>如果指定的对象等于当前对象，则为 true；否则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.GetHashCode">
+      <summary>返回 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" /> 类的实例的哈希代码。</summary>
+      <returns>32 位有符号整数，它是此实例的哈希代码。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.#ctor(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty[])">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> 类的新实例，并且初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> 的属性。</summary>
+      <param name="properties">要用于初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> 的属性。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.Clone">
+      <summary>创建与当前 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> 完全相同的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> 类的实例。</summary>
+      <returns>一个对象，其属性与此 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> 的属性完全相同。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.Equals(System.Object)">
+      <summary>确定两个对象实例是否相等。</summary>
+      <param name="obj">要与当前对象比较的对象。</param>
+      <returns>如果指定的对象等于当前对象，则为 true；否则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.GetHashCode">
+      <summary>返回此对象的哈希代码。</summary>
+      <returns>32 位有符号整数哈希代码。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.#ctor(System.String,System.String,Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType,System.Int32)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" /> 类的新实例，并且使用与传递到该方法的参数有关的信息。</summary>
+      <param name="name">参数名。</param>
+      <param name="datatype">参数的数据类型。</param>
+      <param name="type">参数的类型。 这是一个来自 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> 枚举的值。</param>
+      <param name="sequenceNumber">方法签名中该参数的序列号。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.Clone">
+      <summary>创建与当前 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" /> 完全相同的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" /> 的实例。 无法继承此类。</summary>
+      <returns>一个对象，其属性与此 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" /> 的属性完全相同。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.Equals(System.Object)">
+      <summary>确定两个对象实例是否相等。</summary>
+      <param name="obj">要与当前对象比较的对象。</param>
+      <returns>如果指定的对象等于当前对象，则为 true；否则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.GetHashCode">
+      <summary>返回此对象的哈希代码。</summary>
+      <returns>32 位有符号整数哈希代码。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue.Clone">
+      <summary>创建与当前 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 类完全相同的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 类的实例。</summary>
+      <returns>一个对象。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Add(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue)">
+      <summary>将 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 添加到集合的末尾。</summary>
+      <param name="paramValue">要添加到集合的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Clone">
+      <summary>创建集合的深层副本。 无法继承此方法。</summary>
+      <returns>集合的深层副本。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Contains(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue)">
+      <summary>指示是否可以通过使用索引访问集合中的项而不引发异常。</summary>
+      <param name="paramValue">要在集合中查找的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 对象的名称、标识、ID 或索引。</param>
+      <returns>如果可以通过使用语法 DTSParamValueCollection [index] 访问集合，则为 true；如果不能使用索引来从集合中检索项，则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Equals(System.Object)">
+      <summary>确定两个对象实例是否相等。</summary>
+      <param name="obj">要与当前对象比较的对象。</param>
+      <returns>如果指定的对象等于当前对象，则为 true；否则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.GetHashCode">
+      <summary>返回此对象的哈希代码。</summary>
+      <returns>32 位有符号整数哈希代码。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.IndexOf(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue)">
+      <summary>返回集合中值的第一个匹配项的索引（索引从零开始）。</summary>
+      <param name="value">要在集合中查找的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />。</param>
+      <returns>如果找到，则为集合中指定值的第一个匹配项的索引；否则此方法返回 -1。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Insert(System.Int32,Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue)">
+      <summary>将新的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 对象添加到由索引指定的位置处的集合中。</summary>
+      <param name="index">要在集合中插入新 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 对象的位置。</param>
+      <param name="paramValue">要插入集合中的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 对象。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.#ctor(System.String,System.String,System.String)">
+      <summary>使用指定的方法名称、消息名称和方法的文档初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" /> 类的新实例。</summary>
+      <param name="methodName">方法的名称。</param>
+      <param name="messageName">消息的名称。</param>
+      <param name="doc">方法的文档。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.Clone">
+      <summary>创建与当前对象完全相同的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" /> 类的实例。</summary>
+      <returns>一个对象，其属性与当前对象的属性完全相同。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.Equals(System.Object)">
+      <summary>确定两个对象实例是否相等。</summary>
+      <param name="obj">要与当前对象比较的对象。</param>
+      <returns>如果对象实例相等，则为 true；否则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.GetHashCode">
+      <summary>返回此对象的哈希代码。</summary>
+      <returns>32 位有符号整数哈希代码。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.#ctor(System.String[])">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" /> 类的新实例，并且使用包含枚举的所有可能值的数组。</summary>
+      <param name="enumValues">一个包含枚举的所有可能值的数组。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.Clone">
+      <summary>创建与当前 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" /> 完全相同的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" /> 类的实例。</summary>
+      <returns>一个对象，其属性与此 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" /> 的属性完全相同。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.Equals(System.Object)">
+      <summary>确定两个对象实例是否相等。</summary>
+      <param name="obj">要与当前对象比较的对象。</param>
+      <returns>如果指定的对象等于当前对象，则为 true；否则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.GetHashCode">
+      <summary>返回此对象的哈希代码。</summary>
+      <returns>32 位有符号整数哈希代码。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.CompareArrays(System.Object[],System.Object[])">
+      <summary>比较两个数组。</summary>
+      <param name="a">要进行比较的第一个数组。</param>
+      <param name="b">要与第一个数组进行比较的第二个数组。</param>
+      <returns>如果两个数组都为 true，则返回 null；如果其中一个数组为 false、两个数组的长度不同或某一数组的元素与另一数组的匹配元素不同，则返回 null。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.GetDotNetType(System.String)">
+      <summary>获取与值类型相对应的 Microsoft .NET Framework System.Type 的完整名称。</summary>
+      <param name="primitiveType">对应于值类型的类型名称。</param>
+      <returns>与值类型相对应的 .NET Framework System.Type 的完整名称。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.IsPrimitiveType(System.String)">
+      <summary>指示某一数据类型是否是值类型。</summary>
+      <param name="typeName">要验证数据类型的类型名称。</param>
+      <returns>如果该数据类型是值类型，则为 true；否则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.Validate(System.String,System.String)">
+      <summary>指示某个值是否可以转换为指定的基元数据类型。</summary>
+      <param name="datatype">基元数据类型。</param>
+      <param name="valueToValidate">要验证的值。</param>
+      <returns>如果该值可以转换为基元数据类型，则为 true；否则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.Clone">
+      <summary>创建与当前 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue" /> 完全相同的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue" /> 类的新实例。</summary>
+      <returns>一个对象，其属性与此 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue" /> 的属性完全相同。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.Equals(System.Object)">
+      <summary>确定两个对象实例是否相等。</summary>
+      <param name="obj">要与当前对象比较的对象。</param>
+      <returns>如果指定的对象等于当前对象，则为 true；否则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.GetHashCode">
+      <summary>返回此对象的哈希代码。</summary>
+      <returns>32 位有符号整数哈希代码。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.Clear">
+      <summary>清除与变量相关的值。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.Clone">
+      <summary>创建指定的变量对象的副本。</summary>
+      <returns>创建的变量副本。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.Equals(System.Object)">
+      <summary>指示该变量是否与指定的对象相等。</summary>
+      <param name="obj">要比较的对象。</param>
+      <returns>如果该变量与指定的对象相等，则为 True；否则为 false。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.GetHashCode">
+      <summary>返回变量的哈希代码。</summary>
+      <returns>哈希代码。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+      <summary>将 <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> 传递给该任务。 该任务将使用断点管理器来创建、删除和检查断点的状态。 此方法由运行时调用，在代码中未使用。</summary>
+      <param name="breakPointMgr">此任务的断点管理器。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+      <summary>运行 Web 服务任务。</summary>
+      <param name="connections">任务使用的连接的集合。</param>
+      <param name="variableDispenser">一个用来锁定变量的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 对象。</param>
+      <param name="events">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> 接口的对象。</param>
+      <param name="log">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口的对象。</param>
+      <param name="txn">容器所属的事务对象。 此值可以为 null。</param>
+      <returns>一个来自 <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> 枚举的值。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+      <summary>初始化与该 Web 服务任务相关联的属性。 此方法由运行时调用，在代码中未使用。</summary>
+      <param name="connections">任务使用的连接的集合。</param>
+      <param name="variableDispenser">一个用来锁定变量的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 对象。</param>
+      <param name="events">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口的对象。</param>
+      <param name="log">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口的对象。</param>
+      <param name="eventInfos">一个包含要在任务执行期间引发的事件的集合。</param>
+      <param name="logEntryInfos">日志项的集合。</param>
+      <param name="refTracker">一个对象引用跟踪器。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若要加载保存为 .xml 的包，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="element">包含要加载的信息的节点。</param>
+      <param name="events">一个对象，该对象实现在持久化过程中用于引发事件的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.ResumeExecution">
+      <summary>暂停后恢复执行任务。 由运行时引擎恢复任务或容器。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若将包保存为 .xml，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="doc">要将该信息保存到的 Xml 文档。</param>
+      <param name="events">要将信息保存到的上述文档中的节点。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.SuspendExecution">
+      <summary>指示可执行文件需要挂起。 运行时引擎调用此方法。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>验证该 Web 服务组件已正确配置。</summary>
+      <param name="connections">任务使用的连接的集合。</param>
+      <param name="variableDispenser">一个用来锁定变量的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 对象。</param>
+      <param name="events">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> 接口的对象。</param>
+      <param name="log">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口的对象。</param>
+      <returns>一个来自 <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> 枚举的值。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException" /> 类的新实例，并且初始化 SerializationInfo 和 StreamingContext。</summary>
+      <param name="info">SerializationInfo，其中包含有关所引发的异常的序列化对象数据。</param>
+      <param name="context">包含有关源或目标的上下文信息的 StreamingContext。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.#ctor(System.String)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException" /> 类的新实例，并且初始化错误消息字符串。</summary>
+      <param name="errorMessage">要在异常中使用的错误消息字符串。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.#ctor(System.String,System.Int32)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException" /> 类的新实例，并且初始化错误消息和错误代码。</summary>
+      <param name="errorMessage">要在异常中使用的错误消息。</param>
+      <param name="errorCode">要在异常中使用的错误代码。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>使用有关异常的信息设置 SerializationInfo。</summary>
+      <param name="info">SerializationInfo，其中包含有关所引发的异常的序列化对象数据。</param>
+      <param name="context">包含有关源或目标的上下文信息的 StreamingContext。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.#ctor(System.Object,System.String)">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil" /> 类的新实例，并且初始化 HTTP 连接和 Web 服务描述语言 (WSDL) 文件以便下载。</summary>
+      <param name="connection">HTTP 连接。</param>
+      <param name="downloadedWSDL">要下载的 WSDL 文件的完全限定路径。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.CleanUp">
+      <summary>释放用于分析 Web 服务描述语言 (WSDL) 并调用 Web 方法的所有资源。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.GetServices">
+      <summary>返回一个数组，该数组包含 Web 服务描述语言 (WSDL) 中提供的所有服务。</summary>
+      <returns>一个String类型的数组，该数组包含所有服务的列表。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.GetWebMethodInfos(System.String)">
+      <summary>获取一个数组，该数组包含在某一服务中提供的所有方法。</summary>
+      <param name="serviceName">服务的名称。</param>
+      <returns>一个类型为 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" /> 的数组。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.Invoke(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo,System.String,System.Object,Microsoft.SqlServer.Dts.Runtime.VariableDispenser)">
+      <summary>使用提供的参数调用指定的 Web 方法。</summary>
+      <param name="methodInfo">一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" />，它提供有关要调用的 Web 方法的信息。</param>
+      <param name="serviceName">服务的名称。</param>
+      <param name="connection">一个 <see cref="T:Microsoft.SqlServer.Dts.Runtime.HttpClientConnection" />，它提供 Web 服务的 URL。</param>
+      <param name="taskVariableDispenser">与任务关联的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.VariableDispenser" />。</param>
+      <returns>调用 Web 方法的结果。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.Elements">
+      <summary>获取或设置数组的元素。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection" /> 集合，该集合包含数组中的元素。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.ParamType">
+      <summary>获取参数类型。</summary>
+      <returns>一个来自 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> 枚举的值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.DataType">
+      <summary>获取属性的数据类型。</summary>
+      <returns>属性的数据类型。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.Name">
+      <summary>获取属性的名称。</summary>
+      <returns>属性的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.ParamType">
+      <summary>获取参数的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" />。</summary>
+      <returns>一个来自指示参数类型的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> 枚举的值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.ParamValue">
+      <summary>获取或设置属性的值。</summary>
+      <returns>一个包含属性的值的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.Properties">
+      <summary>获取 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> 类的属性数组。</summary>
+      <returns>一个<see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" />数组。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.DataType">
+      <summary>获取参数的数据类型。</summary>
+      <returns>参数的数据类型。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.Name">
+      <summary>获取参数的名称。</summary>
+      <returns>参数名。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.ParamType">
+      <summary>获取参数的类型。</summary>
+      <returns>一个来自指示参数类型的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 枚举的值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.ParamValue">
+      <summary>获取或设置参数的值。</summary>
+      <returns>一个来自指示参数值的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 枚举的值。 它可能表示复杂值、基元值、数组值或枚举值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.SequenceNumber">
+      <summary>获取方法签名中某一参数的序列号。</summary>
+      <returns>一个指示方法签名中该参数的序列号的值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Item(System.Int32)">
+      <summary>获取指定索引处的元素。</summary>
+      <param name="index">要从集合中返回的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 对象的名称、ID 或索引。</param>
+      <returns>
+        <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.Documentation">
+      <summary>获取文档。</summary>
+      <returns>文档。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.MessageName">
+      <summary>获取消息的名称。</summary>
+      <returns>消息的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.MethodName">
+      <summary>获取方法的名称。</summary>
+      <returns>方法的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.ParamInfos">
+      <summary>获取或设置一个数组，该数组包含某一方法的所有参数信息。</summary>
+      <returns>
+        <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" /> 对象的数组，每个参数对应一个实例。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.Supported">
+      <summary>获取一个值，该值指示是否支持某一 Web 方法。</summary>
+      <returns>如果支持该 Web 方法，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.EnumValues">
+      <summary>获取枚举对象的可能值。</summary>
+      <returns>一个String类型的数组，该数组包含枚举对象的所有可能值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.SelectedValue">
+      <summary>获取或设置参数的值。</summary>
+      <returns>参数的值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.IDTSWebServiceTask.Connection">
+      <summary>获取或设置要使用的连接的名称。</summary>
+      <returns>要使用的连接的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.IDTSWebServiceTask.OverwriteWsdlFile">
+      <summary>获取或设置一个值，该值指示是否将覆盖 WDSL 文件。</summary>
+      <returns>如果将覆盖 WSDL 文件，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.IDTSWebServiceTask.ServiceName">
+      <summary>获取或设置 Web 服务的名称。</summary>
+      <returns>Web 服务的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.IDTSWebServiceTask.WebMethodInfo">
+      <summary>获取或设置一个 DTS Web 方法信息对象。</summary>
+      <returns>DTS Web 方法信息的对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.IDTSWebServiceTask.WsdlFile">
+      <summary>获取或设置 WSDL 文件的名称。</summary>
+      <returns>WSDL 文件的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.AssignedValue">
+      <summary>获取或设置参数的值。</summary>
+      <returns>参数的值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.Value">
+      <summary>获取或设置变量对象的值。</summary>
+      <returns>变量的值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.VariableName">
+      <summary>获取或设置变量名称。</summary>
+      <returns>变量名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.Connection">
+      <summary>获取或设置要使用的连接的名称。</summary>
+      <returns>要使用的连接的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.DebugMode">
+      <summary>获取或设置一个Boolean，该值指示任务是否处于调试模式中。<see cref="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.DebugMode" /> 属性可由多个线程同时访问。 为了确保线程安全并避免并发问题，请使用 Microsoft .NET Framework 中提供的 Interlocked 类。</summary>
+      <returns>如果任务处于调试模式中，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.OutputLocation">
+      <summary>获取或设置 Web 方法的结果的输出位置。</summary>
+      <returns>Web 方法的结果的输出位置。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.OutputType">
+      <summary>获取或设置一个值，该值指示 Web 方法调用的结果的存储位置。</summary>
+      <returns>一个来自 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSOutputType" /> 的值，该值指示 Web 方法的结果的存储位置。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.OverwriteWsdlFile">
+      <summary>获取或设置一个值，该值指示是否将覆盖 Web 服务描述语言 (WDSL) 文件。</summary>
+      <returns>true 表示将覆盖 WSDL 文件；false 表示不覆盖该文件。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.ServiceName">
+      <summary>获取或设置 Web 服务的名称。</summary>
+      <returns>Web 服务的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.SuspendRequired">
+      <summary>获取或设置一个 Boolean 值，该值指示在遇到断点时任务是否应挂起。 遇到断点时，将由任务和容器的运行时引擎设置此值。</summary>
+      <returns>如果在遇到断点时任务挂起，则为 true。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.WebMethodInfo">
+      <summary>获取或设置 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" /> 对象。</summary>
+      <returns>
+        <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" /> 对象。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.WsdlFile">
+      <summary>获取或设置要从文件 URL 或 HTTP URL 读取的 Web 服务描述语言 (WSDL) 文件的名称。</summary>
+      <returns>要从指定 URL 下载的 WSDL 文件的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.ErrorCode">
+      <summary>获取错误代码。</summary>
+      <returns>错误代码。</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue">
+      <summary>在某一参数属于 <see cref="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Array" /> 类型时持有该参数的值。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty">
+      <summary>封装与复杂类型参数的一个属性有关的信息。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue">
+      <summary>封装复杂类型参数的值。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSOutputType">
+      <summary>对 Web 方法调用结果的存储位置进行分类。 Web 方法的结果可以存储于文件或变量中。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSOutputType.File">
+      <summary>将结果存储在文件中。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSOutputType.Variable">
+      <summary>将结果存储在变量中。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo">
+      <summary>创建与某一 Web 方法的一个参数相对应的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" /> 类的实例。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType">
+      <summary>定义传递给某一 Web 服务方法的参数的类型。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Complex">
+      <summary>指定该参数是复杂类型。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Primitive">
+      <summary>指定该参数是基元类型。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Enum">
+      <summary>指定该参数是枚举值。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Array">
+      <summary>指定该参数是数组。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Variable">
+      <summary>指定该参数值包含在某一变量中。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Undefined">
+      <summary>指定未定义的参数类型。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue">
+      <summary>定义一个抽象基类，该基类表示传递给某一 Web 方法的参数值。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection">
+      <summary>表示 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 对象的集合。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo">
+      <summary>封装 Web 方法的详细信息。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue">
+      <summary>在某一参数类型属于 <see cref="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Enum" /> 类型时持有该参数的值。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper">
+      <summary>包含用于标识某一基元数据类型并将该基元类型映射到某一 Microsoft .NET Framework 系统类型的方法。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.IDTSWebServiceTask">
+      <summary>表示一个 DTS Web 服务任务。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue">
+      <summary>封装 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> 类型的特定 <see cref="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Primitive" />。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue">
+      <summary>表示变量值。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask">
+      <summary>运行某一 Web 方法并将结果存储在指定的位置中。 无法继承此类。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException">
+      <summary>包含 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask" /> 使用的异常的定义。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil">
+      <summary>访问并调用 Web 服务。 此类由 <see cref="N:Microsoft.SqlServer.Dts.Tasks.WebServiceTask" /> 及其用户界面用作函数的可重用的库。</summary>
+    </member>
+  </members>
+</doc>

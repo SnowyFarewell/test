@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.WMIEWTask</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 类的新实例。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+      <summary>将 <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> 引用传递到 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 任务。 此方法由运行时调用，在代码中未使用。</summary>
+      <param name="manager">要传递的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> 引用。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+      <summary>运行任务。</summary>
+      <param name="connections">任务的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> 集合。</param>
+      <param name="variableDispenser">任务的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> 集合。</param>
+      <param name="events">对实现用来引发事件的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> 接口的对象的引用。</param>
+      <param name="log">对实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 的对象的引用。</param>
+      <param name="transaction">任务所属的事务对象，具体取决于在 TransactionOption 属性中找到的值。 此值可以设置为 Null 引用（在 Visual Basic 中为 Nothing）。</param>
+      <returns>一个指示执行结果的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />。</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+      <summary>初始化与 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 任务关联的属性。 此方法由运行时调用，在代码中未使用。</summary>
+      <param name="connections">任务的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> 集合。</param>
+      <param name="variableDispenser">一个用来锁定变量的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 对象。</param>
+      <param name="events">一个实现用来接收事件的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口的对象。</param>
+      <param name="log">一个实现用来记录事件的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口的对象。</param>
+      <param name="eventInfos">
+        <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" /> 对象。</param>
+      <param name="logEntryInfos">
+        <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogEntryInfos" /> 对象。</param>
+      <param name="refTracker">一个 <see cref="T:Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker" /> 对象。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若要加载保存为 .xml 的包，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="rootNode">包含要加载的信息的 XML 元素。</param>
+      <param name="events">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 的对象。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.ResumeExecution">
+      <summary>暂停后恢复执行任务。 由运行时引擎恢复任务或容器。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>此方法不能由应用程序代码调用。 若将包保存为 .xml，请使用 <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> 方法。</summary>
+      <param name="doc">包含表示任务的 XML 元素 的 XML 文档。</param>
+      <param name="events">一个实现 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 的对象。</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.SuspendExecution">
+      <summary>指示可执行文件需要挂起。 运行时引擎调用此方法。</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>验证任务是否已正确配置。</summary>
+      <param name="connections">任务的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> 集合。</param>
+      <param name="variableDispenser">一个用来锁定变量的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> 对象。</param>
+      <param name="events">一个实现用来接收事件的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> 接口的对象。</param>
+      <param name="log">一个实现用来记录事件的 <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> 接口的对象。</param>
+      <returns>一个来自 <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> 的值，该值指示验证结果。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.ActionAtEvent">
+      <summary>获取或设置 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask" /> 在任务接收 WMI 事件时响应。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent" /> 值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.ActionAtTimeout">
+      <summary>获取或设置 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask" /> 在任务未接收指定的 WMI 事件而超时时响应。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout" /> 值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.AfterEvent">
+      <summary>获取或设置 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask" /> 在任务接收指定的 WMI 事件时响应。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent" /> 值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.AfterTimeout">
+      <summary>获取或设置 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask" /> 在任务未接收指定的 WMI 事件而超时时响应。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout" /> 值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.NumberOfEvents">
+      <summary>获取或设置任务应观察的 WMI 事件的数目。</summary>
+      <returns>任务应观察的 WMI 事件的数目。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.Timeout">
+      <summary>获取或设置任务在超时前应等待以接收 WMI 事件的秒数。</summary>
+      <returns>任务在超时前应等待以接收 WMI 事件的秒数。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.WmiConnection">
+      <summary>获取或设置与任务关联的 WMI 连接的名称。</summary>
+      <returns>与任务关联的 WMI 连接的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.WqlQuerySource">
+      <summary>获取或设置要由任务执行的 WQL 查询的源。</summary>
+      <returns>WQL 查询的源。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.WqlQuerySourceType">
+      <summary>获取或设置 WQL 查询源类型。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" /> 值。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.ActionAtEvent">
+      <summary>确定在任务接收 Windows Management Instrumentation (WMI) 事件时 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 应如何响应。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent" /> 值。 默认值是 <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent.LogTheEventAndFireDTSEvent" /> 秒。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.ActionAtTimeout">
+      <summary>确定在任务超时且未接收指定的 Windows Management Instrumentation (WMI) 事件时 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 应如何响应。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout" /> 值。 默认值是 <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout.LogTimeoutAndFireDTSEvent" /> 秒。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterEvent">
+      <summary>确定在任务收到指定的 Windows Management Instrumentation (WMI) 事件时 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 应如何响应。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent" /> 值。 默认值是 <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent.ReturnWithSuccess" /> 秒。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterTimeout">
+      <summary>确定在任务超时且未接收指定的 Windows Management Instrumentation (WMI) 事件时 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 应如何响应。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout" /> 值。 默认值是 <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout.ReturnWithFailure" /> 秒。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.DebugMode">
+      <summary>一个 Boolean 值，该值指示 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 是否应检查断点启用与否。</summary>
+      <returns>如果 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 任务应该检查有无已启用的断点，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.ExecutionValue">
+      <summary>获取一个Object，该对象包含 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 任务的结果。</summary>
+      <returns>一个包含任务的结果的Object。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.NumberOfEvents">
+      <summary>获取或设置 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 应观察的 Windows Management Instrumentation (WMI) 事件的数目。</summary>
+      <returns>一个Integer，该整数包含任务应观察的 WMI 事件的数目。 默认值为 1。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.SuspendRequired">
+      <summary>获取或设置一个 Boolean 值，该值指示在遇到断点时任务是否应挂起。 遇到断点时，将由任务和容器的运行时引擎设置此值。</summary>
+      <returns>如果在遇到断点时任务挂起，则为 true。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.Timeout">
+      <summary>获取或设置在任务应等待接收 Windows Management Instrumentation (WMI) 事件多少秒后才超时。</summary>
+      <returns>一个Integer，该整数包含任务在超时前应等待以接收 WMI 事件的秒数。 如果设置为零 (0)，则任务无限期等待。 默认值为零 (0)。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WmiConnection">
+      <summary>获取或设置 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> 任务使用的 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 类的名称。</summary>
+      <returns>与任务关联的 <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> 类的名称。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource">
+      <summary>获取或设置要由 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 执行的 Windows Management Instrumentation 查询语言 (WQL) 查询的源。</summary>
+      <returns>一个包含 WQL 查询的源的String。</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySourceType">
+      <summary>获取或设置一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" /> 值，该值指示要由 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 执行的 Windows Management Instrumentation 查询语言 (WQL) 查询的源类型，例如文件连接或变量。</summary>
+      <returns>一个 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" /> 值。 默认值为 <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType.DirectInput" />。</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent">
+      <summary>确定在任务接收指定的 Windows Management Instrumentation (WMI) 事件时由 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 采取的操作。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent.LogTheEventAndFireDTSEvent">
+      <summary>引发一个自定义 DTS 事件，该事件指示发生了 WMI 事件并且采用托管对象格式 (MOF) 提供与 WMI 事件相关联的任何信息，然后将在 <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterEvent" /> 中指定的事件通知和状态记录到指定日志。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent.LogTheEvent">
+      <summary>将在 <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterEvent" /> 中指定的事件通知和状态记录到指定日志。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout">
+      <summary>确定在任务超时且未接收指定的 Windows Management Instrumentation (WMI) 事件时 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 应如何响应。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout.LogTimeoutAndFireDTSEvent">
+      <summary>引发指示 WMI 事件超时的自定义 DTS 事件，然后将在 <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterTimeout" /> 中指定的超时和状态记录到指定日志。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout.LogTimeout">
+      <summary>将在 <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterTimeout" /> 中指定的超时和状态记录到指定日志。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent">
+      <summary>确定在任务收到指定的 Windows Management Instrumentation (WMI) 事件时 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 应如何响应。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent.ReturnWithSuccess">
+      <summary>记录用户选择将事件通知作为成功处理，并且停止等待记录的事件。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent.ReturnWithFailure">
+      <summary>记录用户选择将事件通知作为失败处理，并且停止等待记录的事件。 这是默认值。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent.WatchfortheEventAgain">
+      <summary>记录用户选择继续等待事件。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout">
+      <summary>确定在任务超时且未接收指定的 Windows Management Instrumentation (WMI) 事件时 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 应如何响应。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout.ReturnWithSuccess">
+      <summary>记录用户选择将超时作为成功处理，并且停止等待记录的事件。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout.ReturnWithFailure">
+      <summary>记录用户选择将超时作为失败处理，并且停止等待记录的事件。 这是默认值。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout.WatchfortheEventAgain">
+      <summary>记录用户选择继续等待事件。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask">
+      <summary>表示 WMI 事件观察器任务。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType">
+      <summary>确定 <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource" /> 属性的源类型，它提供要由 <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> 类执行的 Windows Management Instrumentation 查询语言 (WQL) 查询。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType.FileConnection">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource" /> 包含要从其检索 WQL 查询的文件连接的名称。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType.DirectInput">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource" /> 包含 WQL 查询。</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType.Variable">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource" /> 包含要从其检索 WQL 查询的变量的名称。</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask">
+      <summary>包含用于配置和运行 WMI 事件观察器任务的成员，WMI 事件观察器任务运行 Windows Management Instrumentation (WMI) 查询并返回有关计算机系统的 WMI 数据。 无法继承此类。</summary>
+    </member>
+  </members>
+</doc>
